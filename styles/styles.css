@@ -10,9 +10,6 @@
     padding: 28px 25px 25px 25px;
 }
 
-.nav-item:hover {
-    border-bottom: 2px solid black;
-}
 
 body {
     margin: 0;
@@ -54,12 +51,20 @@ li {
 
 @media (min-width: 690px) {
 
+    header {
+        height: 72px;
+    }
+
     .header-logo {
         display: block;
         float: left;
         font-family: 'Rock Salt';
         font-size: 25px;
         margin-left: 50px;
+    }
+
+    .nav-item:hover {
+        border-bottom: 2px solid black;
     }
 
     li {
