@@ -3,9 +3,15 @@
 }
 
 /* HEADER STYLES */
-a {
+.nav-item {
     text-decoration: none;
     color: black;
+    display: block;
+    padding: 28px 25px 25px 25px;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid black;
 }
 
 body {
@@ -27,12 +33,14 @@ header {
 }
 
 li {
-    padding: 25px;
+    display: block;
     text-transform: uppercase;
     font-family: Roboto;
     font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
+
 
 .header-logo {
     display: none;
@@ -44,7 +52,7 @@ li {
     display: table;
   }
 
-@media (min-width: 680px) {
+@media (min-width: 690px) {
 
     .header-logo {
         display: block;
@@ -54,13 +62,16 @@ li {
         margin-left: 50px;
     }
 
-
     li {
         display: inline-block;
-        float: right;
+    }
+
+    a {
+        display: block;
     }
 
     ul {
-        margin-right: 50px;
+        margin-right: 50px; 
+        text-align: right;
     }
 }
